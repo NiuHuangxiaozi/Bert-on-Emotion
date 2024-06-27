@@ -1,8 +1,12 @@
-# 测试手册
+# Bert on Emotion
 
-### 一、实验目的
 
-目的本实验的目的是通过huggingface上面bert-base-uncased的训练和验证完整的实现一下bert模型训练的过程。
+
+### 一、实验介绍
+
+基于huggingface上面bert-base-uncased模型的模型微调，验证在情绪数据集上的有效性。
+
+
 
 ### 二、实验环境
 
@@ -19,13 +23,15 @@ python==3.9.18
 pip install -r requirements.txt
 ```
 
+
+
 ### 四、实验数据集
 
-数据集的网站：
-
-[]: https://huggingface.co/datasets/dair-ai/emotion/viewer/unsplit
+数据集的网站：[dair-ai/emotion · Datasets at Hugging Face](https://huggingface.co/datasets/dair-ai/emotion/viewer/unsplit)
 
 使用了unsplit来自己划分。
+
+
 
 ### 五、实验结果
 
@@ -35,11 +41,13 @@ pip install -r requirements.txt
 
 ![surprise_datapropotion](./surprise_datapropotion.png)
 
-### 六、使用
+
+
+### 六、如何训练
 
 ##### 6.1 整体文件结构：
 
-![filestructure](C:\D\Lesson\Bert\Bert_base_uncased_Test\filestructure.png)
+![filestructure](./filestructure.png)
 
 ```
 --Config 放的是从huggingface上下载下来的bert-base-uncased的权重
@@ -63,7 +71,9 @@ pip install -r requirements.txt
 python main.py
 ```
 
-### 七、感谢
+
+
+### 七、参考
 
 1、EarlyStop：[Bjarten/early-stopping-pytorch: Early stopping for PyTorch (github.com)](https://github.com/Bjarten/early-stopping-pytorch/tree/master)
 
